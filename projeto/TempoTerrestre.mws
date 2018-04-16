@@ -1,0 +1,485 @@
+{VERSION 4 0 "IBM INTEL NT" "4.0" }
+{USTYLETAB {CSTYLE "Maple Input" -1 0 "Courier" 0 1 255 0 0 1 0 1 0 0 
+1 0 0 0 0 1 }{CSTYLE "2D Math" -1 2 "Times" 0 1 0 0 0 0 0 0 2 0 0 0 0 
+0 0 1 }{CSTYLE "2D Output" 2 20 "" 0 1 0 0 255 1 0 0 0 0 0 0 0 0 0 1 }
+{PSTYLE "Normal" -1 0 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 
+2 2 1 1 1 1 }1 1 0 0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Output" -1 
+11 1 {CSTYLE "" -1 -1 "Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 3 0 
+0 0 0 1 0 1 0 2 2 0 1 }{PSTYLE "Maple Plot" -1 13 1 {CSTYLE "" -1 -1 "
+Times" 1 12 0 0 0 1 2 2 2 2 2 2 1 1 1 1 }3 1 0 0 0 0 1 0 1 0 2 2 0 1 }
+}
+{SECT 0 {EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 10 "ano:=2014;" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%$anoG\"%9?" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 109 "if ((((ano mod 4)=0)and((ano mod 100)<>0))or((ano mo
+d 400)=0)) then bissesto := 1 else bissesto := 0 end if; " }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#>%)bissestoG\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 63 "if (bissesto = 1) then dias := 366.0 else dias := 365
+.0 end if;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%%diasG$\"%]O!\"\"" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 9 "horas:=5;" }}{PARA 11 "" 1 "
+" {XPPMATH 20 "6#>%&horasG\"\"&" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 12 "minutos:=48;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(minutosG\"#
+[" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 13 "segundos:=46;" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%)segundosG\"#Y" }}}{EXCHG {PARA 0 ">
+ " 0 "" {MPLTEXT 1 0 69 "diasAno:=dias+((horas+minutos/60+segundos/60/
+60)/(23+56/60+4/60/60));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%(diasAno
+G$\"+D'GCl$!\"(" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 78 "segundos
+Ano:=diasAno*24*60*60;# dias*24*60*60+horas*60*60+minutos*60+segundos;
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%,segundosAnoG$\"+K$)pbJ!\"#" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 33 "segundosDia:=segundosAno/dia
+sAno;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%,segundosDiaG$\"++++S')!\"&
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 22 "semanasAno:=diasAno/7;
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%+semanasAnoG$\"+z^v<_!\")" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "k:=evalf(2*Pi/segundosAno);
+" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"kG$\"+'=g5*>!#;" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 28 "kd:=evalf(2*Pi/segundosDia);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%#kdG$\"+:_?ss!#9" }}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 22 "grausEquadorSolar:=23;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%2grausEquadorSolarG\"#B" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 24 "minutosEquadorSolar:=27;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%4minutosEquadorSolarG\"#F" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 24 "segundosEquadorSolar:=0;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%5segundosEquadorSolarG\"\"!" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 89 "equadorSolar:=evalf(grausEquadorSolar+minutosEqu
+adorSolar/60+segundosEquadorSolar/60/60);" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%-equadorSolarG$\"++++XB!\")" }}}{EXCHG {PARA 0 "> " 
+0 "" {MPLTEXT 1 0 14 "inicio:=284.5;" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>%'inicioG$\"%XG!\"\"" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 102 
+"plot(equadorSolar*sin(2*Pi/dias*x+inicio), x=0..dias); # \302ngulo eq
+uador solar por dia ao longo do ano " }}{PARA 13 "" 1 "" {GLPLOT2D 
+366 289 289 {PLOTDATA 2 "6%-%'CURVESG6$7Z7$$\"\"!F)$\"3b=>l)e6YI#!#;7$
+$\"3%HLL3Fhf&z!#<$\"3d#=6fqnQA#F,7$$\"3sm\"HK1Sy[\"F,$\"3E'3(f!4c'>@F,
+7$$\"3SL$e*o2MmAF,$\"35!=Y0'Hjm>F,7$$\"3yL$3F)=+]IF,$\"3YSczHX)px\"F,7
+$$\"3dm\"z>RQ*HQF,$\"3k\"\\s))4shb\"F,7$$\"3?Le*[PRIb%F,$\"3ReP)=VMjK
+\"F,7$$\"3(**\\i!f&o<I&F,$\"3%z]D$4,xm5F,7$$\"3'Q$eR_`5wgF,$\"3Eg<_>zn
+(z(F07$$\"37+D\"y$)ez%oF,$\"3Y/YZ][7*z%F07$$\"3/omT?]!>k(F,$\"3\")3gw#
+4<qi\"F07$$\"3#QL3-D87M)F,$!3y;5gWv2%>\"F07$$\"3*4+]ioo%G\"*F,$!33&*pm
+z%RsM%F07$$\"3Y++vom&*=**F,$!3#zn!**>51LuF07$$\"37+]PJQ2o5!#:$!3!e4fto
+Ux-\"F,7$$\"3I$eRF!4DP6F\\p$!3EKl&oys3F\"F,7$$\"3qm;aJ\"4&>7F\\p$!3P0'
+zBW$GO:F,7$$\"3#omm6k#>*G\"F\\p$!3l&3W)3gDP<F,7$$\"3/]ilG6Dq8F\\p$!3lo
+V'[ZU%R>F,7$$\"3umm\"\\i,?W\"F\\p$!3%yZo'>d1(3#F,7$$\"3C]i:\"HB2_\"F\\
+p$!3\")*z[d\"*yB@#F,7$$\"3;](oM$\\o&f\"F\\p$!3/;2%f<FSH#F,7$$\"3Me*[$Q
+AzM;F\\p$!3g.rw5Ba@BF,7$$\"3!o;HKa**Qn\"F\\p$!3>8_k\">S&QBF,7$$\"3(>a)
+3dA\")4<F\\p$!3vzD'p3>[M#F,7$$\"3'o\"z%4(\\sX<F\\p$!3]N0![NR@M#F,7$$\"
+3/vV[%ohWy\"F\\p$!3DK?pM%=#HBF,7$$\"3^L3-)R)>B=F\\p$!3&y7#*>XWfI#F,7$$
+\"3g3-jc\\Vj=F\\p$!3Y_'Qcj=4F#F,7$$\"3T$eR_^rO!>F\\p$!3@F8'\\U-]A#F,7$
+$\"3#*\\PM+Ost>F\\p$!3q7S[z.w>@F,7$$\"3gLeRr<Q\\?F\\p$!3?-!))[Hq:(>F,7
+$$\"32++DlSaF@F\\p$!3]s)*QB\"QMy\"F,7$$\"3*)*\\73i5S?#F\\p$!3_$)GDxQ;o
+:F,7$$\"3=]i:Xf*zF#F\\p$!3$4S2'os+M8F,7$$\"35+voLS9gBF\\p$!3qOvKZ]()[5
+F,7$$\"3dmm\"\\udRV#F\\p$!33E&o=Xoju(F07$$\"3H+](ojpF^#F\\p$!3UR7rH3c
+\"o%F07$$\"3Q$eRZ#\\=%e#F\\p$!3ar8Kx*G&G=F07$$\"3/+]i(pgAm#F\\p$\"37@s
+i>Ji?8F07$$\"3Z;HK:RsNFF\\p$\"3))RQ(*o\")*HE%F07$$\"3(*\\7GXT^7GF\\p$
+\"3-!z=.U,^E(F07$$\"3qm;/J1f()GF\\p$\"3@M3q7?!y+\"F,7$$\"3A]i!Rv)=mHF
+\\p$\"3eD,j$p-UG\"F,7$$\"3VLL$y3))=/$F\\p$\"38yizWTFG:F,7$$\"3ML3F!f,$
+>JF\\p$\"3mm*eJ<T5v\"F,7$$\"31<H#)pS2'>$F\\p$\"3Vq.V#*yIT>F,7$$\"3a++D
+0+imKF\\p$\"3!etWO)GO'3#F,7$$\"39nTN3OZZLF\\p$\"3(3Df[I6Z@#F,7$$\"3sLL
+$[.!z>MF\\p$\"3!Q9XtMvKH#F,7$$\"3M#zW<BU$eMF\\p$\"3o;+*pB42K#F,7$$\"3S
+]ilGW*o\\$F\\p$\"3I\\V]')e#zL#F,7$$\"3Y++D+QzLNF\\p$\"3.v84;WwWBF,7$$
+\"3'*\\P%=<$pqNF\\p$\"3@YN')*oX@M#F,7$$\"3)\\(=#feY.h$F\\p$\"3!=S<z+-)
+GBF,7$$\"$l$F)$\"3h?n/*e6YI#F,-%'COLOURG6&%$RGBG$\"#5!\"\"F(F(-%+AXESL
+ABELSG6$Q\"x6\"Q!6\"-%%VIEWG6$;F($\"%]OFb]l%(DEFAULTG" 1 2 0 1 10 0 2 
+9 1 4 2 1.000000 45.000000 45.000000 0 0 "Curve 1" }}}}{EXCHG {PARA 0 
+"> " 0 "" {MPLTEXT 1 0 16 "focoPerielio:=0;" }}{PARA 11 "" 1 "" 
+{XPPMATH 20 "6#>%-focoPerielioG\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 14 "focoAfelio:=0;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%+
+focoAfelioG\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 26 "solstic
+io := equadorSolar;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*solsticioG$
+\"++++XB!\")" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 14 "a:=-23.5433
+33;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"aG$!)LLaB!\"'" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "latitudeGraus:=-23;" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%.latitudeGrausG!#B" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 19 "latitudeMinutos:=0;" }}{PARA 11 "" 1 "" {XPPMATH 20 "
+6#>%0latitudeMinutosG\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 
+20 "latitudeSegundos:=0;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%1latitud
+eSegundosG\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 73 "latitude
+:=evalf(latitudeGraus+latitudeMinutos/60+latitudeSegundos/60/60);" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%)latitudeG$!#B\"\"!" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 19 "longitudeGraus:=-3;" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%/longitudeGrausG!\"$" }}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 20 "longitudeMinutos:=0;" }}{PARA 11 "" 1 "" {XPPMATH 
+20 "6#>%1longitudeMinutosG\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 
+1 0 21 "longitudeSegundos:=0;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%2lo
+ngitudeSegundosG\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 77 "lo
+ngitude:=evalf(longitudeGraus+longitudeMinutos/60+longitudeSegundos/60
+/60);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%*longitudeG$!\"$\"\"!" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "altitude:=0;" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%)altitudeG\"\"!" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 40 "zenite:=evalf(90-equadorSolar-latitude);" }}{PARA 11 
+"" 1 "" {XPPMATH 20 "6#>%'zeniteG$\"++++b*)!\")" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 96 "plot(zenite*sin(2*Pi/dias*x+inicio), x=0..dias
+); # \302ngulo equador solar por dia ao longo do ano " }}{PARA 13 "" 
+1 "" {GLPLOT2D 377 286 286 {PLOTDATA 2 "6%-%'CURVESG6$7Z7$$\"\"!F)$\"3
+#eTRf@m2!))!#;7$$\"3%HLL3Fhf&z!#<$\"3W+?rPWU#\\)F,7$$\"3sm\"HK1Sy[\"F,
+$\"3SbP)H%\\Y%4)F,7$$\"3SL$e*o2MmAF,$\"3cU5)e#e55vF,7$$\"3yL$3F)=+]IF,
+$\"3WnXl`L)ey'F,7$$\"3dm\"z>RQ*HQF,$\"3&=Vq/%HlUfF,7$$\"3?Le*[PRIb%F,$
+\"3#)4&)y'Gd\\1&F,7$$\"3(**\\i!f&o<I&F,$\"3+kj+rDutSF,7$$\"3'Q$eR_`5wg
+F,$\"3?0#zok[x(HF,7$$\"37+D\"y$)ez%oF,$\"3\">B(p(>sE$=F,7$$\"3/omT?]!>
+k(F,$\"3+,x*\\?$>8iF07$$\"3#QL3-D87M)F,$!3UoB*f`**)fXF07$$\"3*4+]ioo%G
+\"*F,$!3a<u_py5g;F,7$$\"3Y++vom&*=**F,$!3!>0uC35&QGF,7$$\"37+]PJQ2o5!#
+:$!3'>)QG$31Z#RF,7$$\"3I$eRF!4DP6F\\p$!3'RPY2RiJ&[F,7$$\"3qm;aJ\"4&>7F
+\\p$!3s!\\Z%oGqmeF,7$$\"3#omm6k#>*G\"F\\p$!3Yn&R[`pTj'F,7$$\"3/]ilG6Dq
+8F\\p$!3KnqL'zriS(F,7$$\"3umm\"\\i,?W\"F\\p$!3]$[$pH+,qzF,7$$\"3C]i:\"
+HB2_\"F\\p$!3o'=xrY^&[%)F,7$$\"3;](oM$\\o&f\"F\\p$!3#\\B[)[oMg()F,7$$
+\"3Me*[$QAzM;F\\p$!3!ySRmj?a'))F,7$$\"3!o;HKa**Qn\"F\\p$!3p!Hg2_J.$*)F
+,7$$\"3(>a)3dA\")4<F\\p$!33ku#f84V&*)F,7$$\"3'o\"z%4(\\sX<F\\p$!3ZSH-t
+e2W*)F,7$$\"3/vV[%ohWy\"F\\p$!3!=\\rr$Rt%*))F,7$$\"3^L3-)R)>B=F\\p$!3_
+y=e0h&e!))F,7$$\"3g3-jc\\Vj=F\\p$!35*4?E!35s')F,7$$\"3T$eR_^rO!>F\\p$!
+3#HE17mdn\\)F,7$$\"3#*\\PM+Ost>F\\p$!3-%[gv>j[4)F,7$$\"3gLeRr<Q\\?F\\p
+$!3X3\\>P.'*GvF,7$$\"32++DlSaF@F\\p$!3K)e%>+\"G0\"oF,7$$\"3*)*\\73i5S?
+#F\\p$!3_-d'RqY%))fF,7$$\"3=]i:Xf*zF#F\\p$!3SwoFM!eU4&F,7$$\"35+voLS9g
+BF\\p$!3Mqz_kbS0SF,7$$\"3dmm\"\\udRV#F\\p$!3MqHavZ:eHF,7$$\"3H+](ojpF^
+#F\\p$!3a](*f!Gxxy\"F,7$$\"3Q$eRZ#\\=%e#F\\p$!3_5k`*R>F)pF07$$\"3/+]i(
+pgAm#F\\p$\"3$)>')*p8ZJ/&F07$$\"3Z;HK:RsNFF\\p$\"3I%fWn5Qzi\"F,7$$\"3(
+*\\7GXT^7GF\\p$\"3I\"fAlGqVx#F,7$$\"3qm;/J1f()GF\\p$\"3E3()>mtb[QF,7$$
+\"3A]i!Rv)=mHF\\p$\"3Z$Qv)\\h1/\\F,7$$\"3VLL$y3))=/$F\\p$\"34]uccs6OeF
+,7$$\"3ML3F!f,$>JF\\p$\"3;N7x9=\"oo'F,7$$\"31<H#)pS2'>$F\\p$\"3G6i_%Q&
+R8uF,7$$\"3a++D0+imKF\\p$\"3in;ElgKnzF,7$$\"39nTN3OZZLF\\p$\"3kkY<4$eu
+X)F,7$$\"3sLL$[.!z>MF\\p$\"3cc)zLzvuv)F,7$$\"3M#zW<BU$eMF\\p$\"3%yU^]K
+RA'))F,7$$\"3S]ilGW*o\\$F\\p$\"3q[s\"[j&)z#*)F,7$$\"3Y++D+QzLNF\\p$\"3
+'R\\43O+T&*)F,7$$\"3'*\\P%=<$pqNF\\p$\"3fN#H^1+T%*)F,7$$\"3)\\(=#feY.h
+$F\\p$\"3Svk(=qVJ*))F,7$$\"$l$F)$\"3(42Zu@m2!))F,-%'COLOURG6&%$RGBG$\"
+#5!\"\"F(F(-%+AXESLABELSG6$Q\"x6\"Q!6\"-%%VIEWG6$;F($\"%]OFb]l%(DEFAUL
+TG" 1 2 0 1 10 0 2 9 1 4 2 1.000000 45.000000 45.000000 0 0 "Curve 1" 
+}}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 39 "j:=(segundosDia/360)*90;
+#Ajuste de fase" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"jG$\"++++g@!\"&
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 127 "plot(sin(kd*x+j), x=0.
+.segundosDia);# fracionamento da intencidade solar em fun\347\343o do \+
+meio dia por segundos do dia no equin\363cio" }}{PARA 13 "" 1 "" 
+{GLPLOT2D 396 281 281 {PLOTDATA 2 "6%-%'CURVESG6$7en7$$\"\"!F)$!3y1Z\\
+*pTz***!#=7$$\"31*******fqjT*!#:$!3#H=R)==R))**F,7$$\"3#)******>TF$)=!
+#9$!3wx`R3E-K**F,7$$\"3x*****4\\(e-FF6$!3!y<Gf$\\3X)*F,7$$\"3'******>'
+3!>_$F6$!3@e\"=(Hs?B(*F,7$$\"31+++7!3ZO&F6$!3d(pI4tTQK*F,7$$\"3i+++%[I
+(>sF6$!3+yM%3o$)Hv)F,7$$\"3-*****zNOf1*F6$!3+DQo;K!p-)F,7$$\"3-++S`0wx
+5!#8$!3D91lRHMCsF,7$$\"3/++?#)R*\\D\"FU$!3#H0*=BXqviF,7$$\"3%*****zZ!*
+GQ9FU$!3/\\8/HiJ&=&F,7$$\"3&*****z$G'*4i\"FU$!3tZu#))f\\o+%F,7$$\"3H++
+gLJ$*3=FU$!3zS4;?S<@FF,7$$\"39++?8!oW(>FU$!3eV`GV(**ea\"F,7$$\"3)*****
+z!3@3;#FU$!3O\\L4Rx8p>!#>7$$\"3#******>LRzM#FU$\"3i\"pkJ@57;\"F,7$$\"3
+;++?RCEGDFU$\"3!*fBbwf)*\\CF,7$$\"3y****z&48?p#FU$\"3o$*fCpWW%e$F,7$$
+\"33++![YGn)GFU$\"3o3PS![tg'[F,7$$\"33++?Bzn^IFU$\"3-*=q\"HMaweF,7$$\"
+3$)****fcLbVKFU$\"3=VL!f$zwWpF,7$$\"3e****>FcR8MFU$\"3Y^H:5zHyxF,7$$\"
+3?++g;&R(*f$FU$\"3UJ+g&G\\gb)F,7$$\"3C++!e'H=xPFU$\"3?!\\+!GA,^\"*F,7$
+$\"3e+++!fEB'RFU$\"37_sRPfX4'*F,7$$\"3M++I6kLZSFU$\"3KB.i0:2i(*F,7$$\"
+33++gKiMKTFU$\"3mwj%[0!Rx)*F,7$$\"3#)****H43/CUFU$\"3%>PJtYh%f**F,7$$
+\"3c*****fQNdJ%FU$\"3kG;X8WE(***F,7$$\"32++!4G!)4T%FU$\"3//t2)>![*)**F
+,7$$\"3&)****zv^A1XFU$\"3%\\P@I`!zL**F,7$$\"3!)****zOh8*e%FU$\"3+m1F$3
+8l%)*F,7$$\"3w****z(4Z?n%FU$\"3F(e_y8]Ms*F,7$$\"35++S;$R6&[FU$\"3![`[T
+O'yP$*F,7$$\"3R****R-\"fh.&FU$\"3+Mr[*Q^Lx)F,7$$\"3W****zm[;<_FU$\"3/!
+oul&ygn!)F,7$$\"3'******4D(H#R&FU$\"3#f_!3Epv^sF,7$$\"31++S/>v'e&FU$\"
+3(Q$)QQP/*3iF,7$$\"3c****>f!y9w&FU$\"3CB$3S_sa;&F,7$$\"3W+++Cb.[fFU$\"
+3cnbs'[&*)fRF,7$$\"3L*****\\J%3<hFU$\"3%3-9tU()R!GF,7$$\"3y++?&H**=I'F
+U$\"3)y!RR!G&[#\\\"F,7$$\"3m****f)y&zvkFU$\"3o&3c/b-XL#F`p7$$\"3k****>
+IxcdmFU$!3/KN*3rji3\"F,7$$\"3Z*****z-$GNoFU$!3-?&3/!fOeBF,7$$\"3$*)***
+*\\ZM8-(FU$!3c8ocLUkZOF,7$$\"3$)****>JT_+sFU$!3:gNj<qgE[F,7$$\"3o****f
+N9x$Q(FU$!3%*)G$*R#QZZfF,7$$\"3]++!)f8]lvFU$!3y;Bg5Q&\\&pF,7$$\"3u++S'
+G#\\KxFU$!3++8i*fnTx(F,7$$\"33++?LF)Q#zFU$!3u\\6Qhngr&)F,7$$\"3W****RI
+Y1&4)FU$!3PL@x7(*yW\"*F,7$$\"3O++gO-ex#)FU$!3yx6s=n%)*f*F,7$$\"3K++S)f
+D\\O)FU$!3C>G%)z[De(*F,7$$\"3E++?g4F_%)FU$!3y`Bd#e/t()*F,7$$\"3'3++,[N
+ha)FU$!3)zYf78?3'**F,7$$\"&+k)F)$!3#e)p?*pTz***F,-%'COLOURG6&%$RGBG$\"
+#5!\"\"F(F(-%+AXESLABELSG6$Q\"x6\"Q!6\"-%%VIEWG6$;F($\"++++S')!\"&%(DE
+FAULTG" 1 2 0 1 10 0 2 9 1 4 2 1.000000 45.000000 45.000000 0 0 "Curve
+ 1" }}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 119 "plot(sin(kd*x+j)+0.
+06, x=0..segundosDia);# fracionamento da intencidade solar em fun\347
+\343o do meio dia por segundos do dia" }}{PARA 13 "" 1 "" {GLPLOT2D 
+400 300 300 {PLOTDATA 2 "6%-%'CURVESG6$7en7$$\"\"!F)$!3O2Z\\*pTzR*!#=7
+$$\"31*******fqjT*!#:$!3]$=R)==R)Q*F,7$$\"3#)******>TF$)=!#9$!3My`R3E-
+K$*F,7$$\"3x*****4\\(e-FF6$!3Qy\"Gf$\\3X#*F,7$$\"3'******>'3!>_$F6$!3o
+d\"=(Hs?B\"*F,7$$\"31+++7!3ZO&F6$!3/(pI4tTQs)F,7$$\"3i+++%[I(>sF6$!3Yx
+M%3o$)H:)F,7$$\"3-*****zNOf1*F6$!3ZCQo;K!pU(F,7$$\"3-++S`0wx5!#8$!3s81
+lRHMCmF,7$$\"3/++?#)R*\\D\"FU$!3]`!*=BXqvcF,7$$\"3%*****zZ!*GQ9FU$!3/
+\\8/HiJ&e%F,7$$\"3&*****z$G'*4i\"FU$!3wZu#))f\\oS$F,7$$\"3H++gLJ$*3=FU
+$!3\"3%4;?S<@@F,7$$\"39++?8!oW(>FU$!3)fV`GV(**e%*!#>7$$\"3)*****z!3@3;
+#FU$\"3z]m!4Ei3.%F[p7$$\"3#******>LRzM#FU$\"3s\"pkJ@57w\"F,7$$\"3;++?R
+CEGDFU$\"3efBbwf)*\\IF,7$$\"3y****z&48?p#FU$\"3o$*fCpWW%=%F,7$$\"33++!
+[YGn)GFU$\"353PS![tgY&F,7$$\"33++?Bzn^IFU$\"3a*=q\"HMawkF,7$$\"3$)****
+fcLbVKFU$\"3gUL!f$zwWvF,7$$\"3e****>FcR8MFU$\"3+_H:5zHy$)F,7$$\"3?++g;
+&R(*f$FU$\"3'>.+cG\\g:*F,7$$\"3C++!e'H=xPFU$\"3s!\\+!GA,^(*F,7$$\"3e++
++!fEB'RFU$\"3:D(RPfX4-\"!#<7$$\"3M++I6kLZSFU$\"3GK?c]r?O5Fcs7$$\"33++g
+KiMKTFU$\"3iPY[0!Rx/\"Fcs7$$\"3#)****H43/CUFU$\"3CPJtYh%f0\"Fcs7$$\"3c
+*****fQNdJ%FU$\"3!G;X8WE(f5Fcs7$$\"32++!4G!)4T%FU$\"3MIx!)>![*e5Fcs7$$
+\"3&)****zv^A1XFU$\"3WP@I`!zL0\"Fcs7$$\"3!)****zOh8*e%FU$\"3amqK38lW5F
+cs7$$\"3w****z(4Z?n%FU$\"3ye_y8]MK5Fcs7$$\"35++S;$R6&[FU$\"3MN&[TO'yP*
+*F,7$$\"3R****R-\"fh.&FU$\"3_Mr[*Q^LP*F,7$$\"3W****zm[;<_FU$\"3[zYdcyg
+n')F,7$$\"3'******4D(H#R&FU$\"3WE03Epv^yF,7$$\"31++S/>v'e&FU$\"3HL)QQP
+/*3oF,7$$\"3c****>f!y9w&FU$\"3yB$3S_saw&F,7$$\"3W+++Cb.[fFU$\"3cnbs'[&
+*)fXF,7$$\"3L*****\\J%3<hFU$\"3#3-9tU()RS$F,7$$\"3y++?&H**=I'FU$\"3%y!
+RR!G&[#4#F,7$$\"3m****f)y&zvkFU$\"3Y&3c/b-XL)F[p7$$\"3k****>IxcdmFU$!3
+q?`$*3rji[F[p7$$\"3Z*****z-$GNoFU$!3/?&3/!fOe<F,7$$\"3$*)****\\ZM8-(FU
+$!3e8ocLUkZIF,7$$\"3$)****>JT_+sFU$!3<gNj<qgEUF,7$$\"3o****fN9x$Q(FU$!
+3_*G$*R#QZZ`F,7$$\"3]++!)f8]lvFU$!3M<Bg5Q&\\N'F,7$$\"3u++S'G#\\KxFU$!3
+Y*H@'*fnT<(F,7$$\"33++?LF)Q#zFU$!3?\\6QhngrzF,7$$\"3W****RIY1&4)FU$!3&
+R8sFr*yW&)F,7$$\"3O++gO-ex#)FU$!3Oy6s=n%)***)F,7$$\"3K++S)fD\\O)FU$!3%
+)>G%)z[De\"*F,7$$\"3E++?g4F_%)FU$!3OaBd#e/tF*F,7$$\"3'3++,[Nha)FU$!3ao
+%f78?3O*F,7$$\"&+k)F)$!3S')p?*pTzR*F,-%'COLOURG6&%$RGBG$\"#5!\"\"F(F(-
+%+AXESLABELSG6$Q\"x6\"Q!6\"-%%VIEWG6$;F($\"++++S')!\"&%(DEFAULTG" 1 2 
+0 1 10 0 2 9 1 4 2 1.000000 45.000000 45.000000 0 0 "Curve 1" }}}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 119 "plot(sin(kd*x+j)-0.06, x=0.
+.segundosDia);# fracionamento da intencidade solar em fun\347\343o do \+
+meio dia por segundos do dia" }}{PARA 13 "" 1 "" {GLPLOT2D 400 300 
+300 {PLOTDATA 2 "6%-%'CURVESG6$7en7$$\"\"!F)$!3iq%\\*pTzf5!#<7$$\"31**
+*****fqjT*!#:$!3C=R)==R)e5F,7$$\"3#)******>TF$)=!#9$!3sP&R3E-K0\"F,7$$
+\"3x*****4\\(e-FF6$!3s<Gf$\\3X/\"F,7$$\"3'******>'3!>_$F6$!3(e\"=(Hs?B
+.\"F,7$$\"31+++7!3ZO&F6$!35)pI4tTQ#**!#=7$$\"3i+++%[I(>sF6$!3_yM%3o$)H
+N*FH7$$\"3-*****zNOf1*F6$!3aDQo;K!pi)FH7$$\"3-++S`0wx5!#8$!3y91lRHMCyF
+H7$$\"3/++?#)R*\\D\"FV$!3M_!*=BXqvoFH7$$\"3%*****zZ!*GQ9FV$!3Y[8/HiJ&y
+&FH7$$\"3&*****z$G'*4i\"FV$!3rZu#))f\\og%FH7$$\"3H++gLJ$*3=FV$!3xS4;?S
+<@LFH7$$\"39++?8!oW(>FV$!3cV`GV(**e9#FH7$$\"3)*****z!3@3;#FV$!3y[L4Rx8
+pz!#>7$$\"3#******>LRzM#FV$\"3N;pkJ@57cFap7$$\"3;++?RCEGDFV$\"3#*fBbwf
+)*\\=FH7$$\"3y****z&48?p#FV$\"3q$*fCpWW%)HFH7$$\"33++![YGn)GFV$\"3q3PS
+![tgE%FH7$$\"33++?Bzn^IFV$\"3[)=q\"HMaw_FH7$$\"3$)****fcLbVKFV$\"3wVL!
+f$zwWjFH7$$\"3e****>FcR8MFV$\"3%4&H:5zHyrFH7$$\"3?++g;&R(*f$FV$\"3)3.+
+cG\\g&zFH7$$\"3C++!e'H=xPFV$\"3m*[+!GA,^&)FH7$$\"3e+++!fEB'RFV$\"3q_sR
+PfX4!*FH7$$\"3M++I6kLZSFV$\"3!RK?c]r?;*FH7$$\"33++gKiMKTFV$\"3Cxj%[0!R
+x#*FH7$$\"3#)****H43/CUFV$\"3Sr8Ln9Yf$*FH7$$\"3c*****fQNdJ%FV$\"3?H;X8
+WE(R*FH7$$\"32++!4G!)4T%FV$\"3g/t2)>![*Q*FH7$$\"3&)****zv^A1XFV$\"3^v8
+-L0zL$*FH7$$\"3!)****zOh8*e%FV$\"3cm1F$38lC*FH7$$\"3w****z(4Z?n%FV$\"3
+u'e_y8]M7*FH7$$\"35++S;$R6&[FV$\"3FM&[TO'yP()FH7$$\"3R****R-\"fh.&FV$
+\"3YLr[*Q^L<)FH7$$\"3W****zm[;<_FV$\"3i!oul&ygnuFH7$$\"3'******4D(H#R&
+FV$\"3QD03Epv^mFH7$$\"31++S/>v'e&FV$\"3XM)QQP/*3cFH7$$\"3c****>f!y9w&F
+V$\"3EB$3S_sac%FH7$$\"3W+++Cb.[fFV$\"3gnbs'[&*)fLFH7$$\"3L*****\\J%3<h
+FV$\"3'3-9tU()R?#FH7$$\"3y++?&H**=I'FV$\"3)*y!RR!G&[#*)Fap7$$\"3m****f
+)y&zvkFV$!359Ra\\u\\lOFap7$$\"3k****>IxcdmFV$!3)=`$*3rjio\"FH7$$\"3Z**
+***z-$GNoFV$!3)*>&3/!fOeHFH7$$\"3$*)****\\ZM8-(FV$!3a8ocLUkZUFH7$$\"3$
+)****>JT_+sFV$!38gNj<qgEaFH7$$\"3o****fN9x$Q(FV$!3Q)G$*R#QZZlFH7$$\"3]
+++!)f8]lvFV$!3=;Bg5Q&\\b(FH7$$\"3u++S'G#\\KxFV$!3_+8i*fnTP)FH7$$\"33++
+?LF)Q#zFV$!3G]6Qhngr\"*FH7$$\"3W****RIY1&4)FV$!3zK@x7(*yW(*FH7$$\"3O++
+gO-ex#)FV$!3s<@(=n%)*>5F,7$$\"3K++S)fD\\O)FV$!3(=G%)z[De.\"F,7$$\"3E++
+?g4F_%)FV$!3KNsDe/tZ5F,7$$\"3'3++,[Nha)FV$!3uYf78?3c5F,7$$\"&+k)F)$!3_
+)p?*pTzf5F,-%'COLOURG6&%$RGBG$\"#5!\"\"F(F(-%+AXESLABELSG6$Q\"x6\"Q!6
+\"-%%VIEWG6$;F($\"++++S')!\"&%(DEFAULTG" 1 2 0 1 10 0 2 9 1 4 2 
+1.000000 45.000000 45.000000 0 0 "Curve 1" }}}}{EXCHG {PARA 0 "> " 0 "
+" {MPLTEXT 1 0 41 "g:=(segundosDia/360)*270; #Ajuste de fase" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%\"gG$\"++++!['!\"&" }}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 150 "plot(x*1/segundosDia, x=0..segundosDia); # fr
+acionamento dos segundos do dia fun\347\343o de um inteiro por dia por
+ segundos do dia - para usar no dataStamp" }}{PARA 13 "" 1 "" 
+{GLPLOT2D 400 300 300 {PLOTDATA 2 "6%-%'CURVESG6$7S7$$\"\"!F)F(7$$\"3#
+)******>TF$)=!#9$\"3O1%**eT:(z@!#>7$$\"3'******>'3!>_$F-$\"3s%[)RWTFwS
+F07$$\"31+++7!3ZO&F-$\"3&[/\"[*y_\"4iF07$$\"3i+++%[I(>sF-$\"3s&HD(Q&ph
+N)F07$$\"3-*****zNOf1*F-$\"3A!)R@*=)H\\5!#=7$$\"3-++S`0wx5!#8$\"3%*yvZ
+Z!3uC\"FE7$$\"3/++?#)R*\\D\"FI$\"311(Q2LRDX\"FE7$$\"3%*****zZ!*GQ9FI$
+\"3!ppItR'ok;FE7$$\"3&*****z$G'*4i\"FI$\"3'Qf*e0J:w=FE7$$\"3H++gLJ$*3=
+FI$\"3ugjf2En$4#FE7$$\"39++?8!oW(>FI$\"3y`AO.RE&G#FE7$$\"3)*****z!3@3;
+#FI$\"36l'>TK]4]#FE7$$\"3#******>LRzM#FI$\"3yJM/uB_<FFE7$$\"3;++?RCEGD
+FI$\"3Dn*pRnHi#HFE7$$\"3y****z&48?p#FI$\"30?*>o*ev:JFE7$$\"33++![YGn)G
+FI$\"3Ses:247TLFE7$$\"33++?Bzn^IFI$\"3(p0!4KY.KNFE7$$\"3$)****fcLbVKFI
+$\"3!=bG*zE6aPFE7$$\"3e****>FcR8MFI$\"3q*oU>Q*o]RFE7$$\"3?++g;&R(*f$FI
+$\"3YRMyz^OmTFE7$$\"3C++!e'H=xPFI$\"3oZ6@U&R<P%FE7$$\"3e+++!fEB'RFI$\"
+3__!>U9Ege%FE7$$\"33++gKiMKTFI$\"3W%y**y83Gy%FE7$$\"3c*****fQNdJ%FI$\"
+3/.%3C5k]*\\FE7$$\"3&)****zv^A1XFI$\"3h'z!3'RQb@&FE7$$\"3w****z(4Z?n%F
+I$\"3=tl%o\">Y2aFE7$$\"35++S;$R6&[FI$\"3)fF!>xXu9cFE7$$\"3R****R-\"fh.
+&FI$\"3*3B[z%y))GeFE7$$\"3W****zm[;<_FI$\"3(p[u.E&QQgFE7$$\"3'******4D
+(H#R&FI$\"3jPJ0zZ3TiFE7$$\"31++S/>v'e&FI$\"3M:RAN![hY'FE7$$\"3c****>f!
+y9w&FI$\"3ejg)4Qx$omFE7$$\"3W+++Cb.[fFI$\"3+Ends.I%)oFE7$$\"3L*****\\J
+%3<hFI$\"3s>XU&pe*zqFE7$$\"3y++?&H**=I'FI$\"3CgDVA\\'QH(FE7$$\"3m****f
+)y&zvkFI$\"3#\\/X>,M^\\(FE7$$\"3k****>IxcdmFI$\"3#olPN?=bq(FE7$$\"3Z**
+***z-$GNoFI$\"39(e[b?27\"zFE7$$\"3$*)****\\ZM8-(FI$\"3Sa%*QGXaE\")FE7$
+$\"3$)****>JT_+sFI$\"32>Jtj*RRL)FE7$$\"3o****fN9x$Q(FI$\"3qi%e6vJga)FE
+7$$\"3]++!)f8]lvFI$\"3/#4,:Jnjv)FE7$$\"3u++S'G#\\KxFI$\"3CD(\\o%Qk\\*)
+FE7$$\"33++?LF)Q#zFI$\"3Y%30wcg6<*FE7$$\"3W****RIY1&4)FI$\"3_v'oLw(Gp$
+*FE7$$\"3O++gO-ex#)FI$\"3G_w(ynK0e*FE7$$\"3E++?g4F_%)FI$\"3U\"[1`,@Fy*
+FE7$$\"&+k)F)$\"2!***zk*********!#<-%'COLOURG6&%$RGBG$\"#5!\"\"F(F(-%+
+AXESLABELSG6$Q\"x6\"Q!6\"-%%VIEWG6$;F($\"++++S')!\"&%(DEFAULTG" 1 2 0 
+1 10 0 2 9 1 4 2 1.000000 45.000000 45.000000 0 0 "Curve 1" }}}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 58 "n:=evalf(equadorSolar*sin(Pi
+/180*(360.0/dias*(284+119))));" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"
+nG$\"+i#yoU\"!\")" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 12 "m:=lat
+itude;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"mG$!#B\"\"!" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "l:=evalf(tan(Pi/180*latitude));" }}
+{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"lG$!+k\"[ZC%!#5" }}}{EXCHG {PARA 
+0 "> " 0 "" {MPLTEXT 1 0 24 "v:=evalf(tan(Pi/180*n));" }}{PARA 11 "" 
+1 "" {XPPMATH 20 "6#>%\"vG$\"+$QmJa#!#5" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 8 "c:=-l*v;" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"cG$\"+
+$35&z5!#5" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 27 "w:=evalf(arcco
+s(c)*180/Pi);" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"wG$\"+Q'y-Q)!\")
+" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 31 "T:=(2/15)*w; # Tempo en
+solarado" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#>%\"TG$\"+&[qt6\"!\")" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 155 "ensolaradoHoras:=evalf((2/1
+5)*(arccos(-(tan(Pi/180*(latitude)))*(tan(Pi/180*(equadorSolar*sin(Pi/
+180*(360.0/dias*(284+119)))))))*180/Pi));#horas ensolarado" }}{PARA 
+11 "" 1 "" {XPPMATH 20 "6#>%0ensolaradoHorasG$\"+&[qt6\"!\")" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 54 "evalf(ensolaradoHoras/2); #I
+ntervalo da manh\343 ou tarde" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$\"+D
+C&oe&!\"*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "evalf(12-ensol
+aradoHoras/2.0); #Hora da aurora" }}{PARA 11 "" 1 "" {XPPMATH 20 "6#$
+\"+vv98k!\"*" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 46 "evalf(12+en
+solaradoHoras/2.0); #Hora do poente" }}{PARA 11 "" 1 "" {XPPMATH 20 "6
+#$\"+U_oe<!\")" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 144 "plot(((2
+/15)*arccos(-tan(Pi/180*latitude)*tan(Pi/180*equadorSolar*sin(Pi/180*(
+360.0/dias*(284+x)))))*180/Pi),x=0..dias); #dura\347\343o do dia por d
+ia" }}{PARA 13 "" 1 "" {GLPLOT2D 419 290 290 {PLOTDATA 2 "6%-%'CURVESG
+6$7Z7$$\"\"!F)$\"3n[Qoxh)*Q8!#;7$$\"3%HLL3Fhf&z!#<$\"3Z0Gma!GPL\"F,7$$
+\"3sm\"HK1Sy[\"F,$\"3k#eAnQ[pK\"F,7$$\"3SL$e*o2MmAF,$\"3&H\"3//L6<8F,7
+$$\"3yL$3F)=+]IF,$\"3RV\\$*[?:08F,7$$\"3dm\"z>RQ*HQF,$\"3iVkX(yG:H\"F,
+7$$\"3?Le*[PRIb%F,$\"3/i$4R[bwF\"F,7$$\"3(**\\i!f&o<I&F,$\"3-+bTNGIi7F
+,7$$\"3'Q$eR_`5wgF,$\"3QyAT]NjX7F,7$$\"37+D\"y$)ez%oF,$\"3d(oz9;j%G7F,
+7$$\"3/omT?]!>k(F,$\"3`2Re%**e/@\"F,7$$\"3#QL3-D87M)F,$\"3S(p.l6!\\%>
+\"F,7$$\"3*4+]ioo%G\"*F,$\"3+$*z:m8ew6F,7$$\"3Y++vom&*=**F,$\"3;6V<]5)
+)e6F,7$$\"37+]PJQ2o5!#:$\"3&=LWc$*3B9\"F,7$$\"3I$eRF!4DP6F\\p$\"3L@b1Q
+!py7\"F,7$$\"3qm;aJ\"4&>7F\\p$\"35m;C'))G<6\"F,7$$\"3#omm6k#>*G\"F\\p$
+\"3;c\\i^C=*4\"F,7$$\"3/]ilG6Dq8F\\p$\"3I^B+rY@'3\"F,7$$\"3umm\"\\i,?W
+\"F\\p$\"3e6lIaE[w5F,7$$\"3C]i:\"HB2_\"F\\p$\"3!oqpt5-!o5F,7$$\"3;](oM
+$\\o&f\"F\\p$\"3-)\\`-^?B1\"F,7$$\"3Me*[$QAzM;F\\p$\"3-nFf1:Ng5F,7$$\"
+3!o;HKa**Qn\"F\\p$\"3YMb>,74f5F,7$$\"3(>a)3dA\")4<F\\p$\"3;xM-7(o&e5F,
+7$$\"3'o\"z%4(\\sX<F\\p$\"3Y-=KJ'e'e5F,7$$\"3/vV[%ohWy\"F\\p$\"3#pB&=$
+=T%f5F,7$$\"3^L3-)R)>B=F\\p$\"3EO+jfx#41\"F,7$$\"3g3-jc\\Vj=F\\p$\"3_<
+LV3@?j5F,7$$\"3T$eR_^rO!>F\\p$\"3'fgTm*y>m5F,7$$\"3#*\\PM+Ost>F\\p$\"3
+o(f*4d[/t5F,7$$\"3gLeRr<Q\\?F\\p$\"3M*)3L5>d#3\"F,7$$\"32++DlSaF@F\\p$
+\"3u)zf_,XW4\"F,7$$\"3*)*\\73i5S?#F\\p$\"3**='>b=Rx5\"F,7$$\"3=]i:Xf*z
+F#F\\p$\"3v#G2K\"f)=7\"F,7$$\"35+voLS9gBF\\p$\"3+hzSF]uQ6F,7$$\"3dmm\"
+\\udRV#F\\p$\"3IJL%=3iY:\"F,7$$\"3H+](ojpF^#F\\p$\"398b_Oj?s6F,7$$\"3Q
+$eRZ#\\=%e#F\\p$\"3'4s=:#**R)=\"F,7$$\"3/+]i(pgAm#F\\p$\"3sht`vmA17F,7
+$$\"3Z;HK:RsNFF\\p$\"3HN+Hy$QHA\"F,7$$\"3(*\\7GXT^7GF\\p$\"3W(*Q,7\"\\
+,C\"F,7$$\"3qm;/J1f()GF\\p$\"3%pF.L0>lD\"F,7$$\"3A]i!Rv)=mHF\\p$\"3cU+
+>P9$HF\"F,7$$\"3VLL$y3))=/$F\\p$\"3=%HQANxxG\"F,7$$\"3ML3F!f,$>JF\\p$
+\"32qF1\\**o,8F,7$$\"31<H#)pS2'>$F\\p$\"3`5533o!RJ\"F,7$$\"3a++D0+imKF
+\\p$\"3eDnm-/ZB8F,7$$\"39nTN3OZZLF\\p$\"3*o[&z+\"e@L\"F,7$$\"3sLL$[.!z
+>MF\\p$\"394ABviiP8F,7$$\"3M#zW<BU$eMF\\p$\"3&z4M;/)eR8F,7$$\"3S]ilGW*
+o\\$F\\p$\"3eeXPR;'3M\"F,7$$\"3Y++D+QzLNF\\p$\"3&GTZ$**[UT8F,7$$\"3'*
+\\P%=<$pqNF\\p$\"3G(RY$><MT8F,7$$\"3)\\(=#feY.h$F\\p$\"3uI!*\\tE`S8F,7
+$$\"$l$F)$\"3B]$4x<')*Q8F,-%'COLOURG6&%$RGBG$\"#5!\"\"F(F(-%+AXESLABEL
+SG6$Q\"x6\"Q!6\"-%%VIEWG6$;F($\"%]OFb]l%(DEFAULTG" 1 2 0 1 10 0 2 9 1 
+4 2 1.000000 45.000000 45.000000 0 0 "Curve 1" }}}}{EXCHG {PARA 0 "> \+
+" 0 "" {MPLTEXT 1 0 148 "plot(((2/15)*arccos(-tan(Pi/180*latitude)*tan
+(Pi/180*equadorSolar*sin(Pi/180*(360.0/dias*(284+x)))))*180/Pi)-12,x=0
+..dias); #varia\347\343o do dia por dia" }}{PARA 13 "" 1 "" {GLPLOT2D 
+386 291 291 {PLOTDATA 2 "6%-%'CURVESG6$7Z7$$\"\"!F)$\"3m'[Qoxh)*Q\"!#<
+7$$\"3%HLL3Fhf&zF,$\"3ia!Gma!GP8F,7$$\"3sm\"HK1Sy[\"!#;$\"3SEeAnQ[p7F,
+7$$\"3SL$e*o2MmAF5$\"3[H\"3//L6<\"F,7$$\"3yL$3F)=+]IF5$\"3)QV\\$*[?:0
+\"F,7$$\"3dm\"z>RQ*HQF5$\"3mhVkX(yG:*!#=7$$\"3?Le*[PRIb%F5$\"3I.i$4R[b
+w(FG7$$\"3(**\\i!f&o<I&F5$\"3I,+bTNGIiFG7$$\"3'Q$eR_`5wgF5$\"3wOyAT]Nj
+XFG7$$\"37+D\"y$)ez%oF5$\"35d(oz9;j%GFG7$$\"3/omT?]!>k(F5$\"3E`2Re%**e
+/\"FG7$$\"3#QL3-D87M)F5$!3A#f-j\\$))4b!#>7$$\"3*4+]ioo%G\"*F5$!3t*p+UQ
+j=M#FG7$$\"3Y++vom&*=**F5$!3U%))oD)\\*=6%FG7$$\"37+]PJQ2o5!#:$!3O:ocNk
+5pdFG7$$\"3I$eRF!4DP6F^p$!3onyW$>'48sFG7$$\"3qm;aJ\"4&>7F^p$!3n*QLeP6r
+#))FG7$$\"3#omm6k#>*G\"F^p$!3UQ/v$[v\"35F,7$$\"3/]ilG6Dq8F^p$!30([w**G
+`y8\"F,7$$\"3umm\"\\i,?W\"F^p$!3B%)[$pXt^B\"F,7$$\"3C]i:\"HB2_\"F^p$!3
+,KHIE*y*>8F,7$$\"3;](oM$\\o&f\"F^p$!3#*>]Y(*[zw8F,7$$\"3Me*[$QAzM;F^p$
+!3wHB2M\\['R\"F,7$$\"3!o;HKa**Qn\"F^p$!3SbY/))z349F,7$$\"3(>a)3dA\")4<
+F^p$!3YG_wzGJ99F,7$$\"3'o\"z%4(\\sX<F^p$!3av>y'o8MT\"F,7$$\"3/vV[%ohWy
+\"F^p$!3xIw9o\")e09F,7$$\"3^L3-)R)>B=F^p$!3]P'*p.Cs!R\"F,7$$\"3g3-jc\\
+Vj=F^p$!3%\\#om:*yzO\"F,7$$\"3T$eR_^rO!>F^p$!3USReL5-Q8F,7$$\"3#*\\PM+
+Ost>F^p$!3IBS+H9bp7F,7$$\"3gLeRr<Q\\?F^p$!3o16p'*3Gu6F,7$$\"32++DlSaF@
+F^p$!3k7?SZ)\\b0\"F,7$$\"3*)*\\73i5S?#F^p$!3[,\"Q![93E#*FG7$$\"3=]i:Xf
+*zF#F^p$!3AD<Fz'39\"yFG7$$\"35+voLS9gBF^p$!3J+R?fs\\DhFG7$$\"3dmm\"\\u
+dRV#F^p$!3&*pom:=zLXFG7$$\"3H+](ojpF^#F^p$!3E'o[uMm$zFFG7$$\"3Q$eRZ#\\
+=%e#F^p$!39/z7[y+g6FG7$$\"3/+]i(pgAm#F^p$\"3U9<OPbnEiF`o7$$\"3Z;HK:RsN
+FF^p$\"3%)GN+Hy$QH#FG7$$\"3(*\\7GXT^7GF^p$\"3nV(*Q,7\"\\,%FG7$$\"3qm;/
+J1f()GF^p$\"3Q$pF.L0>l&FG7$$\"3A]i!Rv)=mHF^p$\"3%eD/!>P9$H(FG7$$\"3VLL
+$y3))=/$F^p$\"31<%HQANxx)FG7$$\"3ML3F!f,$>JF^p$\"3p+xi!\\**o,\"F,7$$\"
+31<H#)pS2'>$F^p$\"3C0,\"33o!R6F,7$$\"3a++D0+imKF^p$\"3wbsmESqM7F,7$$\"
+39nTN3OZZLF^p$\"3))o[&z+\"e@8F,7$$\"3sLL$[.!z>MF^p$\"3Q\"4ABviiP\"F,7$
+$\"3M#zW<BU$eMF^p$\"3Yz4M;/)eR\"F,7$$\"3S]ilGW*o\\$F^p$\"3y&eXPR;'39F,
+7$$\"3Y++D+QzLNF^p$\"3ZGTZ$**[UT\"F,7$$\"3'*\\P%=<$pqNF^p$\"3xsRY$><MT
+\"F,7$$\"3)\\(=#feY.h$F^p$\"3O2.*\\tE`S\"F,7$$\"$l$F)$\"3A-N4x<')*Q\"F
+,-%'COLOURG6&%$RGBG$\"#5!\"\"F(F(-%+AXESLABELSG6$Q\"x6\"Q!6\"-%%VIEWG6
+$;F($\"%]OFd]l%(DEFAULTG" 1 2 0 1 10 0 2 9 1 4 2 1.000000 45.000000 
+45.000000 0 0 "Curve 1" }}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 153 
+"plot((((2/15)*arccos(-tan(Pi/180*latitude)*tan(Pi/180*equadorSolar*si
+n(Pi/180*(360.0/dias*(284+x)))))*180/Pi)-12)/24,x=0..dias); #varia\347
+\343o do dia por dia" }}{PARA 13 "" 1 "" {GLPLOT2D 400 300 300 
+{PLOTDATA 2 "6%-%'CURVESG6$7Z7$$\"\"!F)$\"3(>5=)=/k,9!#=7$$\"3%HLL3Fhf
+&z!#<$\"3_>#*\\*y=dM\"F,7$$\"3sm\"HK1Sy[\"!#;$\"3k:gDM)fTF\"F,7$$\"3SL
+$e*o2MmAF6$\"3))>hIf6Nr6F,7$$\"3yL$3F)=+]IF6$\"3?;>Lq*Qx/\"F,7$$\"3dm
+\"z>RQ*HQF6$\"3aN#=a]9f3*!#>7$$\"3?Le*[PRIb%F6$\"3e=WXcQ*Ro(FH7$$\"3(*
+*\\i!f&o<I&F6$\"3o0vC^u.ZhFH7$$\"3'Q$eR_`5wgF6$\"3Me01e1k\"\\%FH7$$\"3
+7+D\"y$)ez%oF6$\"3Sd=J_)4pz#FH7$$\"3/omT?]!>k(F6$\"3ng)z^H1o-\"FH7$$\"
+3#QL3-D87M)F6$!3y&3%f6Mu3a!#?7$$\"3*4+]ioo%G\"*F6$!3*fa*)p7F/I#FH7$$\"
+3Y++vom&*=**F6$!3=cF28$)=XSFH7$$\"37+]PJQ2o5!#:$!3)*R\"p5^Byo&FH7$$\"3
+I$eRF!4DP6F_p$!3Nr?b2ZNHrFH7$$\"3qm;aJ\"4&>7F_p$!3A1I29vXb()FH7$$\"3#o
+mm6k#>*G\"F_p$!3(3TXn3!H.5F,7$$\"3/]ilG6Dq8F_p$!3\\i(RhF5o8\"F,7$$\"3u
+mm\"\\i,?W\"F_p$!3xmd[t_;Q7F,7$$\"3C]i:\"HB2_\"F_p$!3C\\3eR.SF8F,7$$\"
+3;](oM$\\o&f\"F_p$!3eruTtuq(Q\"F,7$$\"3Me*[$QAzM;F_p$!37]d\\\\=r39F,7$
+$\"3!o;HKa**Qn\"F_p$!3c?b>.a=A9F,7$$\"3(>a)3dA\")4<F_p$!3]#R\")*pzxF9F
+,7$$\"3'o\"z%4(\\sX<F_p$!3X'y(\\:_\"oU\"F,7$$\"3/vV[%ohWy\"F_p$!3aRV#[
+`T%=9F,7$$\"3^L3-)R)>B=F_p$!36]a()R*eDS\"F,7$$\"3g3-jc\\Vj=F_p$!3)[n-x
+w?$y8F,7$$\"3T$eR_^rO!>F_p$!3a]?O'o.lM\"F,7$$\"3#*\\PM+Ost>F_p$!3G73=a
+3Bu7F,7$$\"3gLeRr<Q\\?F_p$!3?NCoFXiu6F,7$$\"32++DlSaF@F_p$!3)H))[,$)z=
+0\"F,7$$\"3*)*\\73i5S?#F_p$!3/,uX)=&Gg\"*FH7$$\"3=]i:Xf*zF#F_p$!3KUl3O
+B7IxFH7$$\"35+voLS9gBF_p$!3%zp(H(H1E/'FH7$$\"3dmm\"\\udRV#F_p$!3q8sWeP
+QiWFH7$$\"3H+](ojpF^#F_p$!3-29]_x)4t#FH7$$\"3Q$eRZ#\\=%e#F_p$!3'>=H!))
+)o)Q6FH7$$\"3/+]i(pgAm#F_p$\"39f_;lZW7hFao7$$\"3Z;HK:RsNFF_p$\"3K#3+-*
+e=`AFH7$$\"3(*\\7GXT^7GF_p$\"3y6()[*fo$\\RFH7$$\"3qm;/J1f()GF_p$\"33IE
+\\D;GrbFH7$$\"3A]i!Rv)=mHF_p$\"3D=)4#fGg4sFH7$$\"3VLL$y3))=/$F_p$\"3J*
+Qo&*\\Taq)FH7$$\"3ML3F!f,$>JF_p$\"3Vf?(GWAA,\"F,7$$\"31<H#)pS2'>$F_p$
+\"3LS!)G<!p!Q6F,7$$\"3a++D0+imKF_p$\"3LoK/%ytwB\"F,7$$\"39nTN3OZZLF_p$
+\"3?^\\W5\\4H8F,7$$\"3sLL$[.!z>MF_p$\"3c3$)fp09(Q\"F,7$$\"3M#zW<BU$eMF
+_p$\"3T(y)3bh139F,7$$\"3S]ilGW*o\\$F_p$\"3?9-f>3o@9F,7$$\"3Y++D+QzLNF_
+p$\"3FZ\">Qc4xU\"F,7$$\"3'*\\P%=<$pqNF_p$\"3%3tE)p*=oU\"F,7$$\"3)\\(=#
+feY.h$F_p$\"3we>:V>;=9F,7$$\"$l$F)$\"3Rb-4>/k,9F,-%'COLOURG6&%$RGBG$\"
+#5!\"\"F(F(-%+AXESLABELSG6$Q\"x6\"Q!6\"-%%VIEWG6$;F($\"%]OFe]l%(DEFAUL
+TG" 1 2 0 1 10 0 2 9 1 4 2 1.000000 45.000000 45.000000 0 0 "Curve 1" 
+}}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 149 "plot(12-((2/15)*arccos(
+-tan(Pi/180*latitude)*tan(Pi/180*equadorSolar*sin(Pi/180*(360.0/dias*(
+284+x)))))*180/Pi)/2,x=0..dias); #Hora da aurora por dia" }}{PARA 13 "
+" 1 "" {GLPLOT2D 400 300 300 {PLOTDATA 2 "6%-%'CURVESG6$7Z7$$\"\"!F)$
+\"3jx#=u\\J!=V!#<7$$\"3%HLL3Fhf&zF,$\"3cO4g_u8&Q%F,7$$\"3sm\"HK1Sy[\"!
+#;$\"3y!y#*))>35Z%F,7$$\"3SL$e*o2MmAF5$\"39cE$)3'yVf%F,7$$\"3yL$3F)=+]
+IF5$\"36+<gNKrUZF,7$$\"3dm\"z>RQ*HQF5$\"3=7)\\$f-p4\\F,7$$\"3?Le*[PRIb
+%F5$\"3ypaAP2#z2&F,7$$\"3(**\\i!f&o<I&F5$\"3w*H]e]bBE&F,7$$\"3'Q$eR_`5
+wgF5$\"3+LF.@J+haF,7$$\"37+D\"y$)ez%oF5$\"3cxDs<3PkcF,7$$\"3/omT?]!>k(
+F5$\"3s;%yXC$yweF,7$$\"3#QL3-D87M)F5$\"3!)G\"R4#\\!\\1'F,7$$\"3*4+]ioo
+%G\"*F5$\"3_X(Q_D^gF'F,7$$\"3Y++vom&*=**F5$\"3II(ovfAa['F,7$$\"37+]PJQ
+2o5!#:$\"3-(HG8#)QDo'F,7$$\"3I$eRF!4DP6F\\p$\"3c[i!\\cAb&oF,7$$\"3qm;a
+J\"4&>7F\\p$\"3ug()o,\\l]qF,7$$\"3#omm6k#>*G\"F\\p$\"3\\$\\%4/\"[R?(F,
+7$$\"3/]ilG6Dq8F\\p$\"3U:xOJB<ktF,7$$\"3umm\"\\i,?W\"F\\p$\"3!*>H=G$)z
+&[(F,7$$\"3C]i:\"HB2_\"F\\p$\"3I>q\\2/)Gf(F,7$$\"3;](oM$\\o&f\"F\\p$\"
+3ol45o*[_m(F,7$$\"3Me*[$QAzM;F\\p$\"3O+\\R>UX!p(F,7$$\"3!o;HKa**Qn\"F
+\\p$\"37DY$Q[Amq(F,7$$\"3(>a)3dA\")4<F\\p$\"3Brw(RcLLr(F,7$$\"3'o\"z%4
+(\\sX<F\\p$\"3=Wtfe#y@r(F,7$$\"3/vV[%ohWy\"F\\p$\"3X2#*yT)H@q(F,7$$\"3
+^L3-)R)>B=F\\p$\"3oR0&ysqIo(F,7$$\"3g3-jc\\Vj=F\\p$\"315KC@\\)Rl(F,7$$
+\"3T$eR_^rO!>F\\p$\"3kgWjBW!eh(F,7$$\"3#*\\PM+Ost>F\\p$\"3Hup,Dq2HvF,7
+$$\"3gLeRr<Q\\?F\\p$\"3BA*=KV\\&4uF,7$$\"32++DlSaF@F\\p$\"3ef'yhzbAE(F
+,7$$\"3*)*\\73i5S?#F\\p$\"3M))[hAUB*4(F,7$$\"3=]i:Xf*zF#F\\p$\"33&QI.o
+9w#pF,7$$\"35+voLS9gBF\\p$\"3(Rsvcv7^s'F,7$$\"3dmm\"\\udRV#F\\p$\"3'em
+850'[NlF,7$$\"3H+](ojpF^#F\\p$\"32p,II&=xK'F,7$$\"3Q$eRZ#\\=%e#F\\p$\"
+3h,NcmUmOhF,7$$\"3/+]i(pgAm#F\\p$\"3*o,=Gm]m#fF,7$$\"3Z;HK:RsNFF\\p$\"
+3d!*f<$p<'HdF,7$$\"3(*\\7GXT^7GF\\p$\"3fa81od2EbF,7$$\"3qm;/J1f()GF\\p
+$\"3R%)3%\\?Y9L&F,7$$\"3A]i!Rv)=mHF\\p$\"3\"=#[*olZ[8&F,7$$\"3VLL$y3))
+=/$F\\p$\"3%Gz^+-Z`&\\F,7$$\"3ML3F!f,$>JF\\p$\"3qGNboIL&y%F,7$$\"31<H#
+)pS2'>$F\\p$\"3;^VDzrJMYF,7$$\"3a++D0+imKF\\p$\"3Xy![\"f9z9XF,7$$\"39n
+TN3OZZLF\\p$\"36egY2h30WF,7$$\"3sLL$[.!z>MF\\p$\"3tH?[;8VNVF,7$$\"3M#z
+W<BU$eMF\\p$\"36bM*Qh?.J%F,7$$\"3S]ilGW*o\\$F\\p$\"3'Hu\"\\;I)RH%F,7$$
+\"3Y++D+QzLNF\\p$\"3%G-<M_[nG%F,7$$\"3'*\\P%=<$pqNF\\p$\"3)H#z?Os\"yG%
+F,7$$\"3)\\(=#feY.h$F\\p$\"3[\\w@oc?)H%F,7$$\"$l$F)$\"3a$p\"4(\\J!=VF,
+-%'COLOURG6&%$RGBG$\"#5!\"\"F(F(-%+AXESLABELSG6$Q\"x6\"Q!6\"-%%VIEWG6$
+;F($\"%]OFb]l%(DEFAULTG" 1 2 0 1 10 0 2 9 1 4 2 1.000000 45.000000 
+45.000000 0 0 "Curve 1" }}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 149 
+"plot(12+((2/15)*arccos(-tan(Pi/180*latitude)*tan(Pi/180*equadorSolar*
+sin(Pi/180*(360.0/dias*(284+x)))))*180/Pi)/2,x=0..dias); #Hora do poen
+te por dia" }{TEXT -1 0 "" }}{PARA 0 "" 0 "" {TEXT -1 0 "" }}{PARA 13 
+"" 1 "" {GLPLOT2D 400 300 300 {PLOTDATA 2 "6%-%'CURVESG6$7Z7$$\"\"!F)$
+\"3;s\"e-&o>o>!#;7$$\"3%HLL3Fhf&z!#<$\"3M1*RZD'[h>F,7$$\"3sm\"HK1Sy[\"
+F,$\"3w@26!=**G&>F,7$$\"3SL$e*o2MmAF,$\"3RMn6R@cS>F,7$$\"3yL$3F)=+]IF,
+$\"3<I)RknGd#>F,7$$\"3dm\"z>RQ*HQF,$\"3y=]1u4.4>F,7$$\"3?Le*[PRIb%F,$
+\"37`uFEz?#*=F,7$$\"3(**\\i!f&o<I&F,$\"3')p\\T\\Wwt=F,7$$\"3'Q$eR_`5wg
+F,$\"3!os'*yo**Q&=F,7$$\"37+D\"y$)ez%oF,$\"3DUxA=HcL=F,7$$\"3/omT?]!>k
+(F,$\"3Ue@av;K7=F,7$$\"3#QL3-D87M)F,$\"3A(31z]4Nz\"F,7$$\"3*4+]ioo%G\"
+*F,$\"3aDhZu[Rs<F,7$$\"3Y++vom&*=**F,$\"3;FJCSxX^<F,7$$\"37+]PJQ2o5!#:
+$\"3Iqr'y6Y<t\"F,7$$\"3I$eRF!4DP6F\\p$\"3:v$4NuZWr\"F,7$$\"3qm;aJ\"4&>
+7F\\p$\"35C6$)4X$\\p\"F,7$$\"3#omm6k#>*G\"F\\p$\"3m]0f*=0'z;F,7$$\"3/]
+ilG6Dq8F\\p$\"3YGK'ow#ej;F,7$$\"3umm\"\\i,?W\"F\\p$\"3-3<=n,U^;F,7$$\"
+3C]i:\"HB2_\"F\\p$\"3)zH]#f>rS;F,7$$\"3;](oM$\\o&f\"F\\p$\"3_.**=.^ZL;
+F,7$$\"3Me*[$QAzM;F\\p$\"3))401yX&4j\"F,7$$\"3!o;HKa**Qn\"F\\p$\"3\\Pl
+h^xLH;F,7$$\"3(>a)3dA\")4<F\\p$\"3(HB-Okm'G;F,7$$\"3'o\"z%4(\\sX<F\\p$
+\"3el-9u@yG;F,7$$\"3/vV[%ohWy\"F\\p$\"3<z5#e,(yH;F,7$$\"3^L3-)R)>B=F\\
+p$\"3'e%\\@FHpJ;F,7$$\"3g3-jc\\Vj=F\\p$\"3\"*yc(y],Yj\"F,7$$\"3T$eR_^r
+O!>F\\p$\"3&QbOwb>%Q;F,7$$\"3#*\\PM+Ost>F\\p$\"3e-$)\\(H#4Z;F,7$$\"3gL
+eRr<Q\\?F\\p$\"3'z5ym0X!f;F,7$$\"32++DlSaF@F\\p$\"3'R8#Q?Wxt;F,7$$\"3*
+)*\\73i5S?#F\\p$\"336&Qxdw+p\"F,7$$\"3=]i:Xf*zF#F\\p$\"3Shp'>`Qsq\"F,7
+$$\"35+voLS9gBF\\p$\"3hFCVC()[F<F,7$$\"3dmm\"\\udRV#F\\p$\"3ML')*[R^ku
+\"F,7$$\"3H+](ojpF^#F\\p$\"3G$)*pp9Gsw\"F,7$$\"3Q$eRZ#\\=%e#F\\p$\"3-]
+OMtNL'y\"F,7$$\"3/+]i(pgAm#F\\p$\"3S)>=P$\\L2=F,7$$\"3Z;HK:RsNFF\\p$\"
+37,CoI#Qq#=F,7$$\"3(*\\7GXT^7GF\\p$\"3kkQ>BCRZ=F,7$$\"3qm;/J1f()GF\\p$
+\"3[6f]z`&o'=F,7$$\"3A]i!Rv)=mHF\\p$\"3+=0JM_^')=F,7$$\"3VLL$y3))=/$F
+\\p$\"3s?[*zHlW!>F,7$$\"3ML3F!f,$>JF\\p$\"3JZY9$pm9#>F,7$$\"31<H#)pS2'
+>$F\\p$\"3rkX2#Gol$>F,7$$\"3a++D0+imKF\\p$\"3;#>&3a3_[>F,7$$\"39nTN3OZ
+ZLF\\p$\"3?%R`#*Q\"\\f>F,7$$\"3sLL$[.!z>MF\\p$\"3/(z^$ooXm>F,7$$\"3M#z
+W<BU$eMF\\p$\"3Sa1hQz'*o>F,7$$\"3S]ilGW*o\\$F\\p$\"3iD3N)p,1(>F,7$$\"3
+Y++D+QzLNF\\p$\"3a(Hew9D8(>F,7$$\"3'*\\P%=<$pqNF\\p$\"3)y?zjF=7(>F,7$$
+\"3)\\(=#feY.h$F\\p$\"3CN#yJVz,(>F,7$$\"$l$F)$\"3[I3H]o>o>F,-%'COLOURG
+6&%$RGBG$\"#5!\"\"F(F(-%+AXESLABELSG6$Q\"x6\"Q!6\"-%%VIEWG6$;F($\"%]OF
+b]l%(DEFAULTG" 1 2 0 1 10 0 2 9 1 4 2 1.000000 45.000000 45.000000 0 
+0 "Curve 1" }}}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG 
+{PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" 
+{MPLTEXT 1 0 0 "" }}}{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}
+{EXCHG {PARA 0 "> " 0 "" {MPLTEXT 1 0 0 "" }}}}{MARK "52 0 0" 0 }
+{VIEWOPTS 1 1 0 1 1 1803 1 1 1 1 }{PAGENUMBERS 0 1 2 33 1 1 }
