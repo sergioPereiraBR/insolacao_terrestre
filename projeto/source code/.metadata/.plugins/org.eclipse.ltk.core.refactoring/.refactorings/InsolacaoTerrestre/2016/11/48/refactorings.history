@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Change Layout" description="Change Layout" file="/InsolacaoTerrestre/res/layout/activity_insolacao_terrestre.xml" flags="6" flatten="true" id="org.eclipse.andmore.refactoring.convert" proj="/InsolacaoTerrestre" sel-end="289" sel-start="0" stamp="1479899795582" type="android.widget.FrameLayout"/>&#x0A;<refactoring comment="Change Layout" description="Change Layout" file="/InsolacaoTerrestre/res/layout/activity_insolacao_terrestre.xml" flags="6" flatten="true" id="org.eclipse.andmore.refactoring.convert" proj="/InsolacaoTerrestre" sel-end="319" sel-start="0" stamp="1479899867783" type="android.widget.LinearLayout"/>
+</session>

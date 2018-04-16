@@ -1,0 +1,116 @@
+package com.example.insolacaoterrestre;
+
+
+import android.R.string;
+import android.os.Bundle;
+import android.view.View;
+import android.app.Activity;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.EditText;
+import java.text.DecimalFormat;
+import android.view.View.OnClickListener;
+
+
+public class InsolacaoTerrestreActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_insolacao_terrestre);
+		
+		/*
+		final EditText editText_1;
+		final EditText editText_2;
+		final EditText editText_3;
+		final TextView editText_4;
+		final TextView editText_5;
+		final TextView editText_6;
+		final TextView editText_7;
+		final TextView editText_8;
+		final TextView editText_9;
+		
+		Button button1;
+		Button button2;
+			    
+	    editText_1 = (EditText) findViewById(R.id.editText1);
+		editText_2 = (EditText) findViewById(R.id.editText2);
+		editText_3 = (EditText) findViewById(R.id.editText3);
+		editText_4 = (TextView) findViewById(R.id.textView6);
+		editText_5 = (TextView) findViewById(R.id.textView7);
+		editText_6 = (TextView) findViewById(R.id.textView8);
+		editText_7 = (TextView) findViewById(R.id.textView9);
+		editText_8 = (TextView) findViewById(R.id.textView10);
+		editText_9 = (TextView) findViewById(R.id.textView11);
+		
+		
+		button1=(Button) findViewById(R.id.button1);
+		button2=(Button) findViewById(R.id.button2);
+	   
+		button1.setOnClickListener(new OnClickListener () {
+			
+			public void onClick (View arg0) {
+				
+				// var
+			    double custoFixo,descontoemporcentagem,desconto,lucroemporcentagem,lucro,tempoEntregaHoras,tempoEntregaEmDias,custoTotalProducao,precoVendaSemDesconto,precoFinal,lucroProducao;
+			    int produtoEscolhido,quantidade;
+				
+			    String[] produto = new String[5];
+			    double tempoProduto[] = new double[5];
+			    double custoProduto[] = new double[5];
+			   
+
+			    // Premissas
+			    produto[0] = "1 - Produto Camiseta";
+			    produto[1] = "2 - Produto Caneca";
+			    produto[2] = "3 - Produto Chinelo";
+			    produto[3] = "4 - Produto Robe";
+			    produto[4] = "5 - Produto Bolsa";
+			   
+			    tempoProduto[0] = 1;
+			    tempoProduto[1] = 2;
+			    tempoProduto[2] = 2;
+			    tempoProduto[3] = 1;
+			    tempoProduto[4] = 3;
+
+			    custoProduto[0] = 10;
+			    custoProduto[1] = 12;
+			    custoProduto[2] = 5;
+			    custoProduto[3] = 10;
+			    custoProduto[4] = 15;
+
+			    custoFixo = 3;
+			    produtoEscolhido = 0;
+				
+				// Entradas
+			    
+
+			    
+			    quantidade = (int) Double.parseDouble(editText_1.getText().toString());
+
+			    descontoemporcentagem = Double.parseDouble(editText_2.getText().toString());
+
+			    lucroemporcentagem = Double.parseDouble(editText_3.getText().toString());
+				
+				lucro = lucroemporcentagem/100;
+			    desconto = descontoemporcentagem/100;
+			    tempoEntregaHoras = quantidade * tempoProduto[produtoEscolhido-1];
+			    tempoEntregaEmDias = tempoEntregaHoras/24;
+			    custoTotalProducao = (custoProduto[produtoEscolhido-1]+ custoFixo)*quantidade;
+			    precoVendaSemDesconto = custoTotalProducao/(1-lucro);
+			    precoFinal = precoVendaSemDesconto - (precoVendaSemDesconto * desconto);
+			    lucroProducao = precoFinal - custoTotalProducao;
+			   
+
+			    editText_4.setText(String.valueOf("Tempo de Entrega: " + String.format("%.2f", tempoEntregaHoras) + " hora(s)"));
+			    editText_5.setText(String.valueOf("Tempo Entrega: " + String.format("%.2f", tempoEntregaEmDias) + " dia(s)"));
+			    editText_6.setText(String.valueOf("Custo Total de Producao: " + "R$ " + String.format("%.2f", custoTotalProducao)));
+			    editText_7.setText(String.valueOf("Preco de Venda Sem Desconto: " + "R$ " + String.format("%.2f", precoVendaSemDesconto)));
+			    editText_8.setText(String.valueOf("Preco Final: " + "R$ " + String.format("%.2f", precoFinal)));
+			    editText_9.setText(String.valueOf("Lucro Producao: " + "R$ " + String.format("%.2f", lucroProducao)));
+			}
+		}
+		);
+		*/
+	}
+}
